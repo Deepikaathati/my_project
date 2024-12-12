@@ -1,0 +1,14 @@
+import java.util.Arrays;
+
+@FunctionalInterface
+interface MyFunctionalInterface{
+	void greet();
+}
+public class LambdaExpressions {
+
+	public static void main(String[] args) {
+		MyFunctionalInterface myFun = () ->  System.out.println("Hello....");
+        myFun.greet();
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class PatientTest {
+
+	public static void main(String[] args) {
+				Patient p1 = new Patient(56,"Krish",9982357639);
+				s1.displayPatientDetails();
+				
+				System.out.println("------------------");
+				
+				Patient p2 = new Patient(57,"rajini",9843298614);
+				s2.displayPatientDetails();
+				
+				//Local Variables
+				int x = 10;			
+			}
+		}
+	}
+
+}

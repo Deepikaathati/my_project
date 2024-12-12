@@ -1,0 +1,26 @@
+Package login;
+import java.io.*;
+import java.sql.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+public class LoginServlet extends HttpServlet
+{
+Connection con;
+public void init(ServletConfig config)
+{
+try	{
+	Class.forName("Oracle.jdbc.driver.oracleDriver");
+	con=DriverManager.getConnection("jdbc:oracle:thin@localhost:1521:xe","system","manager");
+}catch(Exception e) {
+	e.printStackTrace();
+}
+}
+Protected void dopost(HttpServletRequest request HttpServletResponse response)
+{
+try{
+string s1=request.get Parameter("uname");
+string s2=request.get Parameter("pword");
+PreparedStatement pstmt=con.Preparedstatement("select *from unifo where uname=? and pword=?");
+
+	}
+	

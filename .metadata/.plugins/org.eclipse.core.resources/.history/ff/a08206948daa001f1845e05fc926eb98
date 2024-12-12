@@ -1,0 +1,17 @@
+
+public class PatientTest {
+
+	public static void main(String[] args) {
+
+		Patient p1 = new Patient("Krishna", "Viral fever", 25);
+		p1.displayPatientDetails();
+		System.out.println("**********");
+		Patient p2 = new Patient("Ramu", "cold", 23);
+		p2.displayPatientDetails();
+
+		System.out.println("**********");
+
+		Patient p3 = new Patient("Avinash", "Headache", 21);
+		p3.displayPatientDetails();
+	}
+}

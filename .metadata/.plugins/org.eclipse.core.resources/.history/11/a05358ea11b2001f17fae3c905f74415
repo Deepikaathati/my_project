@@ -1,0 +1,14 @@
+package exception;
+
+public class InsufficientBalanceException extends RuntimeException {
+ 
+	private static final long serialversionUID=1L;
+	
+	Public InsufficientBalanceException() {
+		super();
+	}
+	Public InsufficientBalanceException(String msg) {
+		super(msg);
+	}
+	
+}

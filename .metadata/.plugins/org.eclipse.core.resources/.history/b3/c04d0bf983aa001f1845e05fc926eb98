@@ -1,0 +1,41 @@
+		/*
+		import java.text.DecimalFormat;
+
+		public class LoopsREV {
+		    public static void main(String[] args) {
+		        DecimalFormat df = new DecimalFormat("#.###"); // Format to limit decimals to 3 places
+		        
+		        System.out.println("Number\tSquare Root\tCube Root");
+		        for (int i = 10; i >= 1; i--) {
+		          
+		            
+		            // Print the results
+		            System.out.println(i + "\t" + df.format(squareRoot) + "\t\t" + df.format(cubeRoot));
+		        }
+		    }
+		} */
+public class LoopsREV {
+  public static void printNumbers(int start, int end) throws InterruptedException {
+	  System.out.println("start...");
+	  while(start <= end) {
+		  System.out.println("count:" +start);
+		  Thread.sleep(1000*1);
+		  start--;
+	  }
+	  System.out.println( "end...");
+  } 
+  
+  public static void num(int num) {
+	  System.out.println("Num");
+	  for(int i=10; i>=1;i--) {
+		  System.out.println(i);
+	  }
+  }
+  public static void main(String[] args)  throws InterruptedException{
+	  //printNumbers(1,10);
+	  printnum(12);
+  }
+}
+  
+  
+  

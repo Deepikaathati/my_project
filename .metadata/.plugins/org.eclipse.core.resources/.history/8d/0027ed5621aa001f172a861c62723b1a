@@ -1,0 +1,27 @@
+
+public class Patient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int PatientNumber;
+		String PatientName;
+		long PatientMobileNumber;
+		
+		//constructor
+		public Patient(int PatientNumber, String PatientName, long PatientMobileNumber) {
+			System.out.println("Doctor");
+			this.PatientNumber = PatientNumber;	
+			this.PatientName = PatientName;
+			this.PatientMobileNumber = PatientMobileNumber ;
+		}
+		//Instance Methods
+		public void displayPatientDetails() {
+			System.out.println("Number:"+PatientNumber);
+			System.out.println("Name: "+PatientName);
+			System.out.println("MobileNumber: "+PatientMobileNumber);
+	
+		}
+	
+	}
+
+}

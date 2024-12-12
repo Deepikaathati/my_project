@@ -1,0 +1,10 @@
+<html>
+<body bgcolor=yellow text=green>
+ <h1>Login form</h1>
+ <form method=Post action=login>
+ User name<input type=text name=uname><br>
+ Password<input type=password name=pword><br><br>
+ <input type=submit><input type=reset>
+</form>
+</body>
+</htm>

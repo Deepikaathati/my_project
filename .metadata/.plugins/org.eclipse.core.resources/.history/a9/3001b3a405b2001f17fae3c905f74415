@@ -1,0 +1,12 @@
+package exception;
+
+public class CheckedExceptionDemo {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome");
+		Thread.sleep(6000);
+		System.out.println("Java");
+
+	}
+
+}

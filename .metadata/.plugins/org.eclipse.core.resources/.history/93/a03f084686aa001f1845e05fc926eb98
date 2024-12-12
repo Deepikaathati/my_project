@@ -1,0 +1,17 @@
+ public class LoopsREV {
+public static void printNumbers(int start, int end) throws InterruptedException {
+	  System.out.println("start...");
+	  while(start <= end) {
+		  System.out.println("count:" +start);
+		  Thread.sleep(1000*1);
+		  start--;
+	  }
+	  System.out.println( "end...");
+}  
+  // print squares and cube up to the given number
+  public static void number(int num) {
+	  for(int i=10; i<=1;i--) {
+		  System.out.println(i);
+	  }
+  }
+ }

@@ -1,0 +1,14 @@
+
+public class Student {
+
+	public static void main(String[] args) {
+		// Instance Variables
+       int studentId=1001;
+       String studentName="krish";
+       double studentGPA=9.7;
+         System.out.println(StudentId);
+    
+       }
+	}
+
+

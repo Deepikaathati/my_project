@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+public class SSCStudentProgessReport {
+ public static void main(String[] args) {
+	 Scanner scanner=new Scanner(System.in);
+ 
+ System.out.println("Enter marks for Telugu:");
+ int teluguMarks=scanner.nextInt();
+ 
+ System.out.println("Enter marks for Hindi:");
+ int hindiMarks=scanner.nextInt();
+ System.out.println("Enter marks for English:");
+ int englishMarks=scanner.nextInt();
+ System.out.println("Enter marks for Maths:");
+ int mathsMarks=scanner.nextInt();
+ 
+ System.out.println("\n----- Student Progress Report -----");
+ System.out.println("Name: " + studentName);
+ System.out.println("Total Marks: " + totalMarks);
+ System.out.println("Percentage: " + percentage + "%")
+ 
+ }
+ 
+}

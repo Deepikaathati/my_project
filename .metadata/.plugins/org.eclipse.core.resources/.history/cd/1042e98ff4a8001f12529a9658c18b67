@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class SSCStudentProgressReport{
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Enter the student's name: ");
+        String studentName = scanner.nextLine();
+
+        System.out.println("Enter marks for English: ");
+        int englishMarks = scanner.nextInt();
+
+        System.out.println("Enter marks for Math: ");
+        int mathMarks = scanner.nextInt();
+
+        System.out.println("Enter marks for Science: ");
+        int scienceMarks = scanner.nextInt();
+
+        System.out.println("Enter marks for Social Studies: ");
+        int socialStudiesMarks = scanner.nextInt();
+
+        System.out.println("Enter marks for Hindi: ");
+        int hindiMarks = scanner.nextInt();
+
+        
+       
+
+        // Pass/Fail status using if-else
+        if (englishMarks < 35 || mathMarks < 35 || scienceMarks < 35 || socialStudiesMarks < 35 || hindiMarks < 35) {
+            System.out.println("Status: Fail (Failed in one or more subjects)");
+        } else {
+            System.out.println("Status: Pass");
+        }   
+
+        scanner.close();
+    }
+}

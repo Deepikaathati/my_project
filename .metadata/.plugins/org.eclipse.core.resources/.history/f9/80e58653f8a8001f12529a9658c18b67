@@ -1,0 +1,39 @@
+
+import java.util.Scanner;
+public class SSCStudentProgessReport {
+ public static void main(String[] args) {
+	 
+	 int  StudentRollNumber=1001;
+	 String StudentName ="Dikshu";
+	 String StudentFatherName="Srinivas";
+	 String StudentMotherName="Bhavani";
+	 int StudentDateOfBirth=20/04/2002;
+	 
+	 Scanner scanner=new Scanner(System.in);
+	 System.out.println("Student Progress Report");
+	  System.out.println("Name: " + StudentName);
+	 System.out.println("Student Id:"+StudentRollNumber);
+	 System.out.println("Student Name:"+StudentName);    
+   
+	 System.out.println("Enter marks for Telugu:");
+  int teluguMarks=scanner.nextInt();
+ 
+  System.out.println("Enter marks for Hindi:");
+  int hindiMarks=scanner.nextInt();
+  System.out.println("Enter marks for English:");
+  int englishMarks=scanner.nextInt();
+  System.out.println("Enter marks for Maths:");
+  int mathsMarks=scanner.nextInt();
+ 
+  int totalMarks = teluguMarks + hindiMarks + englishMarks + mathsMarks;
+  double percentage = (double) totalMarks / 5;
+
+   System.out.println("Student Progress Report");
+  System.out.println("Name: " + StudentName);
+  System.out.println("Total Marks: " + totalMarks);
+  System.out.println("Percentage: " + percentage + "%");
+
+  
+ }
+ 
+}

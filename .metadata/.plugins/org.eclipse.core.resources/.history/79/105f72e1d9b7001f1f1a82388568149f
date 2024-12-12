@@ -1,0 +1,12 @@
+package com.edubridge.maven_project1;
+
+public class Calc {
+           public int findsquare(int x)
+           {
+        	   return x*x;
+           }
+           public int findcube(int x)
+           {
+        	   return x*x*x;
+           }
+}

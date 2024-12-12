@@ -1,0 +1,81 @@
+
+/*public class Patient {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int PatientNumber;
+		String PatientName;
+		int PatientMobileNumber;
+		
+		//constructor
+		public Patient(int PatientNumber, String PatientName, intPatientMobileNumber) {
+			System.out.println("Doctor");
+			this.PatientNumber = patientNumber;	
+			this.PatientName = patientName;
+			this.PatientMobileNumber = patientMobileNumber ;
+		}
+		//Instance Methods
+		public void displayPatientDetails() {
+			System.out.println("Number:"+patientNumber);
+			System.out.println("Name: "+patientName);
+			System.out.println("MobileNumber: "+patientMobileNumber);
+	
+		}
+	
+	}
+
+}
+class Doctor {
+    // Instance variables
+    String name;
+    String specialization;
+
+    // Constructor
+    Doctor(String name, String specialization) {
+        this.name = name;
+        this.specialization = specialization;
+    }
+
+    // Method to display doctor details
+    void displayDoctorInfo() {
+        System.out.println("Doctor Name: " + name);
+        System.out.println("Specialization: " + specialization);
+    }
+//}  */
+
+  public class Patient {
+    // Instance variables
+    String name;
+    int age;
+    String ailment;
+
+    // Constructor
+    Patient(String name, int age, String ailment) {
+        this.name = name;
+        this.age = age;
+        this.ailment = ailment;
+    }
+
+    // Method to display patient details
+    void displayPatientInfo() {
+        System.out.println("Patient Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Ailment: " + ailment);
+    }
+}
+
+    public class DoctorPatientDemo {
+    public static void main(String[] args) {
+        // Create a doctor object
+        Doctor doctor = new Doctor("Dr. Smith", "Cardiology");
+
+        // Create a patient object
+        Patient patient = new Patient("John Doe", 45, "Heart Problem");
+
+        // Display doctor and patient details
+        System.out.println("Doctor Details:");
+        doctor.displayDoctorInfo();
+        System.out.println("\nPatient Details:");
+        patient.displayPatientInfo();
+    }
+}

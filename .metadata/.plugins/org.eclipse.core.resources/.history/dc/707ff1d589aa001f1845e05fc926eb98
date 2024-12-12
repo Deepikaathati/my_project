@@ -1,0 +1,14 @@
+ public class DoctorTest {
+    public static void main(String[] args) {
+        
+        Doctor d1 = new Doctor("Dr.Ramesh", "Cardiology", "City Hospital");
+        d1.displayDoctorDetails();
+        
+        
+       System.out.println("**********");
+
+       Doctor d2 = new Doctor("Dr.Suresh", "Cardiology", "City Hospital");
+       d2.displayDoctorDetails();
+       
+    }
+ }

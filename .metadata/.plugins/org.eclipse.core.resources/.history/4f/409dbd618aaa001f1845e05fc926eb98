@@ -1,0 +1,24 @@
+public class Doctor {
+    // Instance variables
+    String name;
+    String specialization;
+    String hospital;
+       
+    static String City="Hyderabad";
+    // Constructor to initialize instance variables
+    public Doctor(String name, String specialization, String hospital) {
+       System.out.println("Hyderabad Doctors list");
+    	this.name = name;
+        this.specialization = specialization;
+        this.hospital = hospital;
+    }
+
+    // Instance method to display doctor's details
+    public void displayDoctorDetails() {
+        System.out.println("Doctor's Name: " + name);
+        System.out.println("Specialization: " + specialization);
+        System.out.println("Hospital: " + hospital);
+    }
+}
+
+    

@@ -1,0 +1,83 @@
+
+public class Calc {
+ public static void Calc(int num, String operation) {
+	 switch(operation) {
+	 case"square":
+		 System.out.println("Square "+num+" is "+(num*num));
+		 break;
+	 case"cube":
+		 System.out.println("Square "+num+" is "+(num*num));
+		 break;
+		 default:
+			 System.out.println("Invalid Operation");
+			 
+	 }
+ }
+    public static void main(String[] args) {
+    	int num=10;
+    	String operation="cube";
+    	Calc(num, operation);
+    	double billAmount=1000;
+    	
+    }
+}
+import.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+class Student {
+    private String name;
+ private int rollNumber;
+    private List<Integer> grades;
+
+    public Student(String name, int rollNumber) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.grades = new ArrayList    }
+
+    public StringName() {
+        return name;
+    }
+
+    public int getRollNumber() {
+        return rollNumber;
+       public void addGrade(int grade) {
+        grades.add(grade);
+    }
+
+    public List<Integer> getGrades() {
+        return grades;
+    }
+
+    public double calculateAverage() {
+        if (grades.isEmpty()) return 0;
+        int = 0;
+        for (int grade : grades) {
+            sum += grade;
+        }
+        return (double) sum / grades.size();
+    }
+}
+
+class ProgressReport {
+    private List<Student> students;
+
+    public ProgressReport() {
+        students = new ArrayList<>();
+    }
+
+    public void addStudent(Student student) {
+        students.add(student);
+    }
+
+    public void generateReport() {
+        System.out.println("Progress Report");
+        System.out.println("================================");
+        for (Student student : students) {
+            System.out.println("Name: " + student.getName());
+            System.out.println("Roll: " + student.getRollNumber());
+            System.out.println("Grades: " + student.getGrades());
+            System.out.println("Average: %.2f\n", student.calculateAverage());
+            System.out.println("")       }
+    }
+}
