@@ -4612,3 +4612,12 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 	at org.eclipse.osgi.internal.weaving.WovenClassImpl.callHooks(WovenClassImpl.java:249)
 	at org.eclipse.osgi.internal.weaving.WeavingHookConfigurator.processClass(WeavingHookConfigurator.java:80)
 	... 102 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-12-13 10:19:50.075
+!MESSAGE An internal error occurred during: "Git Repository Change Scanner".
+!STACK 0
+java.lang.NoClassDefFoundError: org/eclipse/egit/core/RepositoryCache
+	at org.eclipse.egit.ui.internal.ExternalRepositoryScanner$RepositoryChangeScanner.run(ExternalRepositoryScanner.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.egit.core (316).
+	... 2 more
