@@ -1,0 +1,13 @@
+package com.edubridge.maven_project1;
+
+public class SumOfDigits {
+	 public void findCountDigit(int n) {
+	 public  int n=2345;
+	 public int rem = 0;
+	 public int sum = 0;
+      while(n > 0){
+   	   rem = n%10;
+   	   sum = sum+rem;
+   	   n =n/10;
+      }
+}

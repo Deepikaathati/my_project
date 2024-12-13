@@ -27,7 +27,7 @@ public class AuthServiceTest {
     @Disabled
 	@Test 
 	@DisplayName("check with valid data")
-	public void testAuthenticateWithValidDate1() {
+	public void testAuthenticateWithValidDate() {
 		boolean actual = auth.authenticate("admin", "admin123");
 		assertTrue(actual);
 	}

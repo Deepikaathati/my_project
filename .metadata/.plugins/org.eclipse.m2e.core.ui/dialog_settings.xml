@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Edubridge_ecli[pseworkspace\maven_project1\src\main\java\com\edubridge\maven_project1"/>
 			<item value="C:\Users\ADMIN\eclipse-workspace\Array"/>
 			<item value="C:\Eclipse  workspace_1234"/>
 			<item value="C:\Users\ADMIN\eclipse-workspace\Java8Features\src\java8features\StreamPipeLineDemo.java"/>
@@ -28,13 +29,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.edubridge.maven_project1"/>
 		</list>
 		<list key="groupId">
-			<item value="com.edubridge"/>
 		</list>
 		<list key="artifactId">
-			<item value="maven_project1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

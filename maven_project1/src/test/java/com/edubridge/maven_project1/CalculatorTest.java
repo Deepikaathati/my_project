@@ -1,0 +1,53 @@
+package com.edubridge.maven_project1;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class CalculatorTest {
+	private Calculator c = null;
+
+	@BeforeEach
+	public void setup() {
+		c = new Calculator();
+		System.out.println("BeforeEach");
+	}
+
+	@AfterEach
+	public void tearup() {
+		c = null;
+		System.out.println("AfterEach");
+	}
+
+	@Test
+	public void testFindsum() {
+		int actual = c.findSum(10, 20);
+		int expected = 30;
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testFindsub() {
+		int actual = c.findSub(10, 2);
+		int expected = 8;
+
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testFindmul() {
+		int actual = c.findMul(10, 2);
+		int expected = 20;
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void testFinddiv() {
+		int actual = c.findDiv(20, 2);
+		int expected = 10;
+		assertEquals(expected, actual);
+	}
+
+}

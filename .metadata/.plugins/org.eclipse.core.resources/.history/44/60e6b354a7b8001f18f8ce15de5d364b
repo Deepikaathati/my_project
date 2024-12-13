@@ -1,0 +1,9 @@
+package com.edubridge.maven_project1;
+
+public class CountDigits {
+       int n=2345, Count = 0;
+       while(n > 0){
+    	   Count++;
+    	   n=n/10;
+       }
+}
