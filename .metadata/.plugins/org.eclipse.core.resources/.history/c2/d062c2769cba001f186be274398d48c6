@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class CarDistance {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        double u = 36 * 1000.0 / 3600.0;
+        double a = 5.0;  
+        
+        for (int i = 0; i < 2; i++) {
+            int t = scanner.nextInt();  // Read time in seconds
+           
+            double distance = u * t + (a * t * t) / 2;
+            System.out.println((int) distance);  // Print the distance as an integer
+        }
+
+        scanner.close();
+    }
+}
